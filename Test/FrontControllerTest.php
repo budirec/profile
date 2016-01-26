@@ -20,6 +20,7 @@ class FrontControllerTest extends PHPUnit_Framework_TestCase {
    * @depends testLoadConfiguration
    */
   public function testConnectDBSuccess() {
+    //TODO: still failure eventhoug it should be ok.
     $this->assertInstanceOf('PDO', $this->fc->getDb('db'));
   }
 
